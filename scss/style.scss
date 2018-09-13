@@ -1,0 +1,235 @@
+// typography
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,700");
+
+// variables 
+$color-primary: #777;
+$color-primary-light: lighten($color-primary, 15%);
+$color-primary-lighter: lighten($color-primary, 40%);
+$color-secondary: #31edc2;
+$color-secondary-dark: darken($color-secondary, 15%);
+$color-tritary: #eee;
+$color-white: #fff;
+$color-link: #61dfff;
+
+$color-default: #4bdaff;
+$color-default-light: lighten($color-default, 10%);
+$color-success: #3fdd82;
+$color-success-light: lighten($color-success, 10%);
+$color-error: #e96673;
+$color-error-light: lighten($color-error, 10%);
+$color-warning: #ff6d47;
+$color-warning-light: lighten($color-warning, 10%);
+$color-info: #9b5ec1;
+$color-info-light: lighten($color-info, 10%);
+
+// base styles
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: (10 / 16)* 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.6rem;
+    color: $color-primary;
+    line-height: 1.5;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+img{
+    width: 100%;
+}
+
+// components
+
+// layout
+
+.container{
+    margin: 2rem;
+}
+
+// ======================================================
+.header {
+    margin-bottom: 10rem;
+    text-align: center;
+
+    .brand {
+        width: 50%;
+    }
+
+    .nav{
+        margin: 4rem 0;
+
+        li{
+            padding: 1rem;
+            border-radius: .5rem;
+            a{
+                color: $color-primary;
+                display: block;
+                &:active{
+                    color: $color-white;
+                }
+            }
+            &:active{
+                background-color: $color-secondary;
+            }
+        }
+    }
+
+    .intro{
+        text-align: left;
+        padding: 2rem;
+        color: $color-primary-light;
+    }
+}
+
+// ==========================================================
+.section{
+    &__title {
+        text-transform: capitalize;
+        color: $color-primary;
+        margin: 1rem 0;
+        text-align: left;
+    }
+
+    &__head{
+        color: $color-secondary;
+        padding: 2rem;
+        width: 80%;
+        line-height: 1;
+    } 
+
+    &__description{
+        text-align: left;
+        .link {
+            color: $color-link;
+        }
+    }
+    
+}
+// ============================================================
+.img{
+    border: .1rem $color-primary-lighter solid;
+    padding: 1rem;
+    margin: 1rem 0;
+    display: inline-block;
+
+    &-avatar{
+        width: 50%;
+        
+    }
+
+    &-card{
+        border: $color-primary-lighter .1rem solid;
+        padding: 1rem;
+    }
+}
+
+// ============================================================
+.quote{
+    padding: 0 2rem;
+    margin: 2rem;
+    font-size: 2rem;
+    color: $color-primary-light;
+    border-left: 1rem solid $color-secondary;
+    display: inline-block;
+    border-radius: .5rem;
+    text-align: left;
+}
+// ============================================================
+
+.form {
+    text-align: center;
+    width: 100%;
+
+    &__image{
+        width: 50%;
+    }
+    input{
+
+        padding: 1rem;
+        width: 100%;
+        border-style: none;
+        margin: 1.5rem 0;
+        border-bottom: .5rem solid $color-secondary;
+        border-radius: .3rem;
+        &:focus{
+            outline: none;
+        }
+    }
+}
+// =============================================================
+.btn{
+    display: block;
+    width: 100%;
+    margin: 2rem 0;
+    border: none;
+    padding: 1rem;
+    text-transform: uppercase;
+    color: $color-white;
+    border-radius: .5rem;
+
+    &:focus{
+        outline: none;
+    }
+
+    &--default{
+        background-color: $color-default;
+        
+        &:hover{
+            background-color: $color-default-light
+        }
+    }
+
+    &--success{
+        background-color: $color-success;
+        
+        &:hover{
+            background-color: $color-success-light
+        }
+    }
+
+    &--error{
+        background-color: $color-error;
+        
+        &:hover{
+            background-color: $color-error-light
+        }
+    }
+
+    &--warning{
+        background-color: $color-warning;
+        
+        &:hover{
+            background-color: $color-warning-light
+        }
+    }
+
+    &--info{
+        background-color: $color-info;
+        
+        &:hover{
+            background-color: $color-info-light
+        }
+    }
+
+}
+
+// ==========================================================
+.grid {
+    display: grid;
+
+}

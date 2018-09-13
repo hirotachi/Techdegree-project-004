@@ -5,99 +5,100 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Web Style Guide</title>
-    <link rel="stylesheet" href="css/materialize.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header class="main-nav">
-        <img src="images/logo.png" alt="logo image" class="logo">
-        <ul class="nav">
-            <li><a href="#">Typography</a></li>
-            <li><a href="#">Buttons</a></li>
-            <li><a href="#">Form</a></li>
-            <li><a href="#">Images</a></li>
-            <li><a href="#">Grid</a></li>
-        </ul>
-        <p class="header-intro">
-            This is what the navigation menu looks like when the screen isat 769px, the menu will be displayed vertically.
-        </p>
-    </header>
-
-    <main>
-        <div class="section typography">
-            <h5 class="titles">typography</h5>
-            <h2 class="typography-intro">Take a look at this amazing headline</h2>
-
-            <p class="typography-description">
-                This is a typical paragraph for the UI Kit. <a href="#">Here is what a link might look like</a>. The typical font family for this kit is Helivetica Neue. This kit is intended for clean and refreshing web layouts. No jazz hands here, just the minimal clean web design. the kit comes fully equipped with everything from full responsive media stylinf to buttons to form fields.
-                I enjoy using <em>italics</em> as well from time to time. Feel free to create the most amazing design ever with this kit. I truly hope you enjoy not only the kit but this amazing paragraph as well. :)
+    <div class="container">
+        <header class="header">
+            <img src="images/logo.png" alt="logo image" class="brand">
+            <ul class="nav">
+                <li><a href="#typography">Typography</a></li>
+                <li><a href="#buttons">Buttons</a></li>
+                <li><a href="#form">Form</a></li>
+                <li><a href="#images">Images</a></li>
+                <li><a href="#grid">Grid</a></li>
+            </ul>
+            <p class="intro">
+                This is what the navigation menu looks like when the screen isat 769px, the menu will be displayed vertically.
             </p>
-            <p class="quote">You know what really gets me going? A really nice set of block quotes. That's right, block quotes that say, "Hey. I'm an article you want to read and nurture."</p>
-        </div>
+        </header>
 
-        <div class="section form">
-            <h5 class="titles">Form Elements</h5>
-            <form action="index.html">
-                <img class="form-image" src="images/avatar.png" alt="avatar image">
-                <input type="text" placeholder="Username" name="user_name" id="user_name">
-                <input type="password" placeholder="Password" name="user_password" id="password">
-                <button type="submit">Login</button>
-            </form>
-        </div>
+        <main>
+            <div class="section" id="typography">
+                <p class="section__title">typography</p>
+                <h2 class="section__head">Take a look at this amazing headline</h2>
 
-        <div class="section images">
-            <h5 class="titles">Images</h5>
-            <img class="image" src="images/image.png" alt="image of waves">
-            <img src="images/avatar.png" alt="avatar image" class="avatar-image">
-        </div>
-
-        <div class="section buttons">
-            <h5 class="titles">Buttons</h5>
-            <button class="btn">default</button>
-            <button class="btn">success</button>
-            <button class="btn">error</button>
-            <button class="btn">warning</button>
-            <button class="btn">info</button>
-        </div>
-
-        <div class="section grid">
-            <h5 class="titles">Grid System</h5>
-
-            <div class="col">.grid_col--12</div>
-
-            <div class="col">
-                <div class="col-6">.grid_col--6</div>
-                <div class="col-6">.grid_col--6</div>
+                <p class="section__description">
+                    This is a typical paragraph for the UI Kit. <a class="link" href="#">Here is what a link might look like</a>. The typical font family for this kit is Helivetica Neue. This kit is intended for clean and refreshing web layouts. No jazz hands here, just the minimal clean web design. the kit comes fully equipped with everything from full responsive media stylinf to buttons to form fields.
+                    I enjoy using <em>italics</em> as well from time to time. Feel free to create the most amazing design ever with this kit. I truly hope you enjoy not only the kit but this amazing paragraph as well. :)
+                </p>
+                <p class="quote">You know what really gets me going? A really nice set of block quotes. That's right, block quotes that say, "Hey. I'm an article you want to read and nurture."</p>
             </div>
 
-            <div class="col">
-                <div class="col-4">.grid_col--4</div>
-                <div class="col-4">.grid_col--4</div>
-                <div class="col-4">.grid_col--4</div>
+            <div class="section" id="form">
+                <p class="section__title">Form Elements</p>
+                <form action="index.html" class="form">
+                    <img class="img-avatar" src="images/avatar.png" alt="avatar image">
+                    <input type="text" placeholder="Username" name="user_name" id="user_name">
+                    <input type="password" placeholder="Password" name="user_password" id="password">
+                    <button class="btn btn--default" type="submit">Login</button>
+                </form>
             </div>
 
-            <div class="col">
-                <div class="col-3">.grid_col--3</div>
-                <div class="col-3">.grid_col--3</div>
-                <div class="col-3">.grid_col--3</div>
-                <div class="col-3">.grid_col--3</div>
+            <div class="section" id="images">
+                <p class="section__title">Images</p>
+                <img class="img-card" src="images/image.png" alt="image of waves">
+                <img src="images/avatar.png" alt="avatar image" class="img-avatar">
             </div>
 
-            <div class="col">
-                <div class="col-5">.grid_col--5</div>
-                <div class="col-7">.grid_col--7</div>
+            <div class="section" id="buttons">
+                <p class="section__title">Buttons</p>
+                <button class="btn btn--default">default</button>
+                <button class="btn btn--success">success</button>
+                <button class="btn btn--error">error</button>
+                <button class="btn btn--warning">warning</button>
+                <button class="btn btn--info">info</button>
             </div>
 
-            <div class="col">
-                <div class="col-8">.grid_col--8</div>
-                <div class="col-4">.grid_col--4</div>
-            </div>
+            <div class="section" id="grid">
+                <p class="section__title">Grid System</p>
 
-            <div class="col">
-                <div class="centered col-7">.centered.grid_col--7</div>
+                <div class="grid">.grid_col--12</div>
+
+                <div class="grid">
+                    <div class="col--6">.grid_col--6</div>
+                    <div class="col--6">.grid_col--6</div>
+                </div>
+
+                <div class="grid">
+                    <div class="col--4">.grid_col--4</div>
+                    <div class="col--4">.grid_col--4</div>
+                    <div class="col--4">.grid_col--4</div>
+                </div>
+
+                <div class="grid">
+                    <div class="col--3">.grid_col--3</div>
+                    <div class="col--3">.grid_col--3</div>
+                    <div class="col--3">.grid_col--3</div>
+                    <div class="col--3">.grid_col--3</div>
+                </div>
+
+                <div class="grid">
+                    <div class="col--5">.grid_col--5</div>
+                    <div class="col--7">.grid_col--7</div>
+                </div>
+
+                <div class="grid">
+                    <div class="col--8">.grid_col--8</div>
+                    <div class="col--4">.grid_col--4</div>
+                </div>
+
+                <div class="grid">
+                    <div class="centered col-7">.centered.grid_col--7</div>
+                </div>
             </div>
-        </div>
-    </main>
+        </main>
+    </div>
 
 </body>
 </html>
