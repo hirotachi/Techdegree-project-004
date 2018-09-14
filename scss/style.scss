@@ -244,41 +244,60 @@ img{
 
 // ==========================================================
 
-.row {
+.grid{
     margin: 5rem 0;
+    display: grid;
+    grid-gap: 1rem;
 
-    .col{
-        color: $color-primary;
-        margin: 1rem 0;
-        padding: 1rem;
-        border-radius: .5rem;
+    &-col-12{
+        grid-template-columns: 1fr;
+    }
+    &-col-6{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    &-col-4{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    &-col-3{
+        grid-template-columns: repeat(4, 1fr);
+    }
+    &-col-5-7{
+        grid-template-columns: 5fr 7fr;
+    }
+    &-col-8-4{
+        grid-template-columns: 8fr 4fr;
+    }
+    &-col-7-center{
+        grid-template-columns: 70%;
+        justify-content: center;
+    }
 
-        &--12{
-            background-color: $color-col-12;
-        }
+}
 
-        &--8{
-            background-color: $color-col-8;
-        }
+.col {
+    margin: .5rem 0;
+    padding: 1rem 0;
+    border-radius: .5rem;
 
-        &--7{
-            background-color: $color-col-7;
-        }
-
-        &--6{
-            background-color: $color-col-6;
-        }
-
-        &--5{
-            background-color: $color-col-5;
-        }
-
-        &--4{
-            background-color: $color-col-4;
-        }
-
-        &--3{
-            background-color: $color-col-3;
-        }
+    &-12{
+        background-color: $color-col-12;
+    }
+    &-8{
+        background-color: $color-col-8;
+    }
+    &-7{
+        background-color: $color-col-7;
+    }
+    &-6{
+        background-color: $color-col-6;
+    }
+    &-5{
+        background-color: $color-col-5;
+    }
+    &-4{
+        background-color: $color-col-4;
+    }
+    &-3{
+        background-color: $color-col-3;
     }
 }
