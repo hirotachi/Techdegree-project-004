@@ -76,6 +76,9 @@ img {
     border: #dddddd 0.1rem solid;
     padding: 1rem; }
 
+#images {
+  text-align: center; }
+
 .quote {
   padding: 0 2rem;
   margin: 2rem;
@@ -133,5 +136,24 @@ img {
     .btn--info:hover {
       background-color: #b283cf; }
 
-.grid {
-  display: grid; }
+.row {
+  margin: 5rem 0; }
+  .row .col {
+    color: #777;
+    margin: 1rem 0;
+    padding: 1rem;
+    border-radius: .5rem; }
+    .row .col--12 {
+      background-color: #6df2d2; }
+    .row .col--8 {
+      background-color: #ff9a7d; }
+    .row .col--7 {
+      background-color: #f0959e; }
+    .row .col--6 {
+      background-color: #40a6cc; }
+    .row .col--5 {
+      background-color: #73e7a0; }
+    .row .col--4 {
+      background-color: #78e5ff; }
+    .row .col--3 {
+      background-color: #e699ee; }

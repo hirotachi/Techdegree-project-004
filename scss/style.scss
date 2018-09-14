@@ -22,6 +22,16 @@ $color-warning-light: lighten($color-warning, 10%);
 $color-info: #9b5ec1;
 $color-info-light: lighten($color-info, 10%);
 
+
+// grid color varaibles
+$color-col-12: #6df2d2;
+$color-col-6: #40a6cc;
+$color-col-4: #78e5ff;
+$color-col-3: #e699ee;
+$color-col-5: #73e7a0;
+$color-col-7: #f0959e;
+$color-col-8: #ff9a7d;
+
 // base styles
 * {
     margin: 0;
@@ -138,6 +148,10 @@ img{
     }
 }
 
+#images {
+    text-align: center;
+}
+
 // ============================================================
 .quote{
     padding: 0 2rem;
@@ -229,7 +243,42 @@ img{
 }
 
 // ==========================================================
-.grid {
-    display: grid;
 
+.row {
+    margin: 5rem 0;
+
+    .col{
+        color: $color-primary;
+        margin: 1rem 0;
+        padding: 1rem;
+        border-radius: .5rem;
+
+        &--12{
+            background-color: $color-col-12;
+        }
+
+        &--8{
+            background-color: $color-col-8;
+        }
+
+        &--7{
+            background-color: $color-col-7;
+        }
+
+        &--6{
+            background-color: $color-col-6;
+        }
+
+        &--5{
+            background-color: $color-col-5;
+        }
+
+        &--4{
+            background-color: $color-col-4;
+        }
+
+        &--3{
+            background-color: $color-col-3;
+        }
+    }
 }
