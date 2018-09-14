@@ -30,9 +30,16 @@ img {
   display: inline-block; }
   .img-avatar {
     width: 50%; }
+    @media (min-width: 769px) {
+      .img-avatar {
+        width: 20rem; } }
   .img-card {
     border: #dddddd 0.1rem solid;
     padding: 1rem; }
+    @media (min-width: 769px) {
+      .img-card {
+        width: 50rem;
+        margin-right: 20rem; } }
 
 #images {
   text-align: center; }
@@ -61,6 +68,11 @@ img {
     border-radius: .3rem; }
     .form input:focus {
       outline: none; }
+
+@media (min-width: 769px) {
+  #form {
+    float: right;
+    width: 45%; } }
 
 .btn {
   display: block;
@@ -94,35 +106,65 @@ img {
     .btn--info:hover {
       background-color: #b283cf; }
 
+@media (min-width: 796px) {
+  .btn-list {
+    display: flex;
+    justify-content: space-around; }
+  .btn {
+    flex-basis: 15rem; } }
+
 .container {
-  margin: 2rem; }
+  margin: 2rem auto;
+  max-width: 1100px; }
 
 .header {
   margin-bottom: 10rem;
   text-align: center; }
   .header .brand {
     width: 50%; }
+    @media (min-width: 796px) {
+      .header .brand {
+        width: 10rem;
+        float: left; } }
   .header .nav {
     margin: 4rem 0; }
+    @media (min-width: 796px) {
+      .header .nav {
+        float: right;
+        margin: 0; } }
     .header .nav li {
       padding: 1rem;
       border-radius: .5rem; }
+      @media (min-width: 796px) {
+        .header .nav li {
+          display: inline-block; } }
       .header .nav li a {
         color: #777;
         display: block; }
         .header .nav li a:active {
           color: #fff; }
-      .header .nav li:active {
+        .header .nav li a:hover {
+          color: #fff; }
+      .header .nav li:hover {
         background-color: #31edc2; }
+      .header .nav li:active {
+        background-color: #77f3d7; }
+    @media (min-width: 796px) {
+      .header .nav {
+        float: right; } }
   .header .intro {
     text-align: left;
-    padding: 2rem;
+    padding: 2rem 0;
     color: #9d9d9d; }
+    @media (min-width: 769px) {
+      .header .intro {
+        clear: both;
+        padding: 7rem 0; } }
 
 .section__title {
   text-transform: capitalize;
   color: #777;
-  margin: 1rem 0;
+  margin: 2rem 0;
   text-align: left; }
 
 .section__head {
@@ -135,6 +177,11 @@ img {
   text-align: left; }
   .section__description .link {
     color: #61dfff; }
+
+@media (min-width: 769px) {
+  #typography {
+    float: left;
+    width: 45%; } }
 
 @media (min-width: 769px) {
   .grid {
@@ -175,3 +222,13 @@ img {
     background-color: #78e5ff; }
   .col-3 {
     background-color: #e699ee; }
+
+@media (min-width: 769px) {
+  .clearfix::after {
+    content: "";
+    display: table;
+    clear: both; }
+  .clearfix::before {
+    content: '';
+    display: table;
+    clear: both; } }

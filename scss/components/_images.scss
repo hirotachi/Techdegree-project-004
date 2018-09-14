@@ -4,17 +4,28 @@
     margin: 1rem 0;
     display: inline-block;
 
+    
+
     &-avatar{
         width: 50%;
-        
+        @media (min-width: 769px){
+            width: 20rem;
+        }
     }
 
     &-card{
         border: $color-primary-lighter .1rem solid;
         padding: 1rem;
+        @media (min-width: 769px){
+            width: 50rem;
+            margin-right: 20rem;
+        }
     }
 }
 
 #images {
     text-align: center;
+
 }
+
+

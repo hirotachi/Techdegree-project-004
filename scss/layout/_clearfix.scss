@@ -1,0 +1,17 @@
+@media (min-width: 769px){
+    
+    .clearfix{
+        &::after{
+            content: "";
+            display: table;
+            clear: both;
+        }
+        &::before{
+            content: '';
+            display: table;
+            clear: both;
+        }
+
+    }
+    
+}

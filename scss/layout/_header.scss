@@ -4,30 +4,55 @@
 
     .brand {
         width: 50%;
+        @media (min-width: 796px){
+            width: 10rem;
+            float: left;
+        }
     }
 
     .nav{
         margin: 4rem 0;
-
+        @media (min-width: 796px){
+            float: right;
+            margin: 0;
+        }
         li{
             padding: 1rem;
             border-radius: .5rem;
+            @media (min-width: 796px){
+                display: inline-block;
+            }
             a{
                 color: $color-primary;
                 display: block;
                 &:active{
                     color: $color-white;
                 }
+                &:hover{
+                    color: $color-white;
+                }
             }
-            &:active{
+
+            &:hover{
                 background-color: $color-secondary;
             }
+            &:active{
+                background-color: $color-secondary-light;
+            }
+        }
+
+        @media (min-width: 796px){
+            float: right;
         }
     }
 
     .intro{
         text-align: left;
-        padding: 2rem;
+        padding: 2rem 0;
         color: $color-primary-light;
+        @media (min-width: 769px){
+            clear: both;
+            padding: 7rem 0;
+        }
     }
 }

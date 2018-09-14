@@ -9,7 +9,7 @@
 </head>
 <body>
     <div class="container">
-        <header class="header">
+        <header class="header clearfix">
             <img src="images/logo.png" alt="logo image" class="brand">
             <ul class="nav">
                 <li><a href="#typography">Typography</a></li>
@@ -45,7 +45,7 @@
                 </form>
             </div>
 
-            <div class="section" id="images">
+            <div class="section clearfix" id="images">
                 <p class="section__title">Images</p>
                 <img class="img-card" src="images/image.png" alt="image of waves">
                 <img src="images/avatar.png" alt="avatar image" class="img-avatar">
@@ -53,11 +53,13 @@
 
             <div class="section" id="buttons">
                 <p class="section__title">Buttons</p>
-                <button class="btn btn--default">default</button>
-                <button class="btn btn--success">success</button>
-                <button class="btn btn--error">error</button>
-                <button class="btn btn--warning">warning</button>
-                <button class="btn btn--info">info</button>
+                <div class="btn-list">
+                    <button class="btn btn--default">default</button>
+                    <button class="btn btn--success">success</button>
+                    <button class="btn btn--error">error</button>
+                    <button class="btn btn--warning">warning</button>
+                    <button class="btn btn--info">info</button>
+                </div>
             </div>
 
             <div class="section" id="grid">

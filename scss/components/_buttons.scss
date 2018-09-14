@@ -53,3 +53,14 @@
     }
 
 }
+
+@media (min-width:796px){
+    .btn-list{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .btn{
+        flex-basis: 15rem;
+    }
+}
