@@ -1,0 +1,20 @@
+.form {
+    text-align: center;
+    width: 100%;
+
+    &__image{
+        width: 50%;
+    }
+    input{
+
+        padding: 1rem;
+        width: 100%;
+        border-style: none;
+        margin: 1.5rem 0;
+        border-bottom: .5rem solid $color-secondary;
+        border-radius: .3rem;
+        &:focus{
+            outline: none;
+        }
+    }
+}

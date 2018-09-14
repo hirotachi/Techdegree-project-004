@@ -1,0 +1,55 @@
+.btn{
+    display: block;
+    width: 100%;
+    margin: 2rem 0;
+    border: none;
+    padding: 1rem;
+    text-transform: uppercase;
+    color: $color-white;
+    border-radius: .5rem;
+
+    &:focus{
+        outline: none;
+    }
+
+    &--default{
+        background-color: $color-default;
+        
+        &:hover{
+            background-color: $color-default-light
+        }
+    }
+
+    &--success{
+        background-color: $color-success;
+        
+        &:hover{
+            background-color: $color-success-light
+        }
+    }
+
+    &--error{
+        background-color: $color-error;
+        
+        &:hover{
+            background-color: $color-error-light
+        }
+    }
+
+    &--warning{
+        background-color: $color-warning;
+        
+        &:hover{
+            background-color: $color-warning-light
+        }
+    }
+
+    &--info{
+        background-color: $color-info;
+        
+        &:hover{
+            background-color: $color-info-light
+        }
+    }
+
+}

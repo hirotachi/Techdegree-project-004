@@ -1,0 +1,30 @@
+// variables 
+$color-primary: #777;
+$color-primary-light: lighten($color-primary, 15%);
+$color-primary-lighter: lighten($color-primary, 40%);
+$color-secondary: #31edc2;
+$color-secondary-dark: darken($color-secondary, 15%);
+$color-tritary: #eee;
+$color-white: #fff;
+$color-link: #61dfff;
+
+$color-default: #4bdaff;
+$color-default-light: lighten($color-default, 10%);
+$color-success: #3fdd82;
+$color-success-light: lighten($color-success, 10%);
+$color-error: #e96673;
+$color-error-light: lighten($color-error, 10%);
+$color-warning: #ff6d47;
+$color-warning-light: lighten($color-warning, 10%);
+$color-info: #9b5ec1;
+$color-info-light: lighten($color-info, 10%);
+
+
+// grid color varaibles
+$color-col-12: #6df2d2;
+$color-col-6: #40a6cc;
+$color-col-4: #78e5ff;
+$color-col-3: #e699ee;
+$color-col-5: #73e7a0;
+$color-col-7: #f0959e;
+$color-col-8: #ff9a7d;

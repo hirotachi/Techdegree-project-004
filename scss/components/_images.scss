@@ -1,0 +1,20 @@
+.img{
+    border: .1rem $color-primary-lighter solid;
+    padding: 1rem;
+    margin: 1rem 0;
+    display: inline-block;
+
+    &-avatar{
+        width: 50%;
+        
+    }
+
+    &-card{
+        border: $color-primary-lighter .1rem solid;
+        padding: 1rem;
+    }
+}
+
+#images {
+    text-align: center;
+}

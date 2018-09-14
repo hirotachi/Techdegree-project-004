@@ -1,0 +1,33 @@
+.header {
+    margin-bottom: 10rem;
+    text-align: center;
+
+    .brand {
+        width: 50%;
+    }
+
+    .nav{
+        margin: 4rem 0;
+
+        li{
+            padding: 1rem;
+            border-radius: .5rem;
+            a{
+                color: $color-primary;
+                display: block;
+                &:active{
+                    color: $color-white;
+                }
+            }
+            &:active{
+                background-color: $color-secondary;
+            }
+        }
+    }
+
+    .intro{
+        text-align: left;
+        padding: 2rem;
+        color: $color-primary-light;
+    }
+}

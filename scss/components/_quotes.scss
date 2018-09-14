@@ -1,0 +1,10 @@
+.quote{
+    padding: 0 2rem;
+    margin: 2rem;
+    font-size: 2rem;
+    color: $color-primary-light;
+    border-left: 1rem solid $color-secondary;
+    display: inline-block;
+    border-radius: .5rem;
+    text-align: left;
+}

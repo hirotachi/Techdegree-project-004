@@ -1,0 +1,23 @@
+.section{
+    &__title {
+        text-transform: capitalize;
+        color: $color-primary;
+        margin: 1rem 0;
+        text-align: left;
+    }
+
+    &__head{
+        color: $color-secondary;
+        padding: 2rem;
+        width: 80%;
+        line-height: 1;
+    } 
+
+    &__description{
+        text-align: left;
+        .link {
+            color: $color-link;
+        }
+    }
+    
+}
